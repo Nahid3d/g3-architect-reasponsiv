@@ -124,6 +124,53 @@ ul {
     font-size: small;
 }
 
+/* feature section end  */
+
+/* Experience section start  */
+
+.experience-text{
+    min-height: 200px;
+    width: 45%;
+}
+.experience-img{
+    min-height: 200px;
+    width: 45%;
+
+}
+.experience-tow{
+    width: 80%;
+    display: flex;
+    gap: 40px;
+    margin: 50px auto;
+    min-height: 200px;
+}
+.box1{
+    padding: 10px;
+    text-align: justify;
+    box-shadow: -1px 1px 7px gray,0px 0px 0px gray;
+    margin-top: 5px;
+    border-radius: 5px;
+    height: 107px;
+}
+
+.experience-img img{
+
+    width: 100%;
+    height: 646px;
+    object-fit: cover;
+
+}
+.experience-btn{
+    position: absolute;
+    margin-top: -42px;
+    margin-left: -20px;
+    padding: 27px;
+    }
+    
+
+
+
+    /* media  */
 
 @media screen and (max-width:576px) {
     .brand-p {
@@ -175,12 +222,37 @@ ul {
         grid-template-columns: repeat(1,1fr);
         width: 100%;
         height: 100%;
-        
+        object-fit: cover;
     }
     .feature-img img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
+    /* feature section end  */
+
+    /* Experience section start  */
+
+    .experience-img {
+        min-height: 200px;
+        width: 100%;
+    }
+    .experience-tow{
+        flex-direction: column;
+    }
+    .experience-text {
+        min-height: 200px;
+        width: 100%;
+    }
+    .experience-btn{
+        position: absolute;
+        margin-top: 17px;
+        margin-left: 0px;
+        padding: 27px;
+        width: 80%;
+        }
+
+        /* experience section end  */
 
 }
