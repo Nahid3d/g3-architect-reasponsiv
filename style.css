@@ -6,7 +6,8 @@
     font-weight: 400;
     font-style: normal;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -33,26 +34,30 @@ ul {
 
 .nav-text {
 
-   
+
     justify-content: center;
     align-items: center;
 
 }
-.g-three{
+
+.g-three {
     font-weight: 300;
 }
-.brand{
+
+.brand {
     font-weight: 400;
     text-align: center;
 
 }
-.brand-p{
+
+.brand-p {
     font-weight: 300;
     text-align: center;
     padding: 0 150px;
 
 }
-.brand-btn{
+
+.brand-btn {
     color: white;
     background-color: #ff900e;
     border: none;
@@ -60,50 +65,122 @@ ul {
     border-radius: 5px;
     text-align: center;
 }
-.brand-button{
+
+.brand-button {
     text-align: center;
 }
-.banner-img img{
+
+.banner-img img {
     width: 80%;
-    
+
 }
-.banner-img{
-    
+
+.banner-img {
+
     display: flex;
     margin-top: 30px;
-    align-items:center ;
+    align-items: center;
     flex-direction: column;
 
 }
-.head{
+
+.head {
     background-color: #fff4e6;
 }
 
+/* banner section ended  */
 
+/* feature section start  */
+
+.tow-feature{
+    display: flex;
+    gap: 10px;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.feature-img {
+    min-height: 200px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+.feature-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.feature-text {
+    min-height: 200px;
+    margin-left: 20px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.feature-p{
+    color: #727272;
+    font-size: small;
+}
 
 
 @media screen and (max-width:576px) {
-    .brand-p{
+    .brand-p {
         padding: 0;
-      
+
     }
-    body{
+
+    body {
         padding: 0;
     }
-    ul{
+
+    ul {
         gap: 8px;
         flex-direction: column;
     }
-    .navbar{
+
+    .navbar {
         justify-content: center;
         display: flex;
         align-items: center;
         width: 200px;
 
     }
-    .head{
+
+    .head {
         align-items: center;
         justify-items: center;
-        max-width: 408px;
+        max-width: 572px;
     }
+
+    /* banner section media quay style end  */
+
+    /* feature section style start  */
+
+    .tow-feature{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .feature-text{
+        margin: 0;
+        padding: 0;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+    }
+    .feature-img{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        height: 100%;
+        
+    }
+    .feature-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
 }
