@@ -345,4 +345,7 @@ ul {
             font-size: small;
         
         }
+        .footer-img img{
+            width: 40px;
+        }
 }
